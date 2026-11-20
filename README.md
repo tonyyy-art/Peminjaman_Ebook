@@ -1,8 +1,15 @@
+| NAMA | NIM |
+|------|-----|
+| AHMAD FATHONI | 202410370110444 |
+| Muhammad Fayyad Hudzaqi | 202410370110450 |
+| Ilham Antonika Wijaya | 202410370110452 |
+| ABU BAKAR HADUN | 202410370110477 |
+| Abid Abdullah Ghani | 202410370110485 |
+
 # Panduan Setup — Sistem Peminjaman E-Book
 
 Dokumentasi lengkap cara memasang & menjalankan aplikasi **Sistem Peminjaman E-Book**
 (FrontEnd HTML/CSS/JS + BackEnd PHP 8 OOP + database MySQL) di laptop baru.
-
 > Aplikasi ini adalah prototipe untuk tugas UTS Pemrograman Web.
 > Seluruh data (user, e-book, peminjaman) disimpan di database MySQL `peminjaman_ebook`.
 
