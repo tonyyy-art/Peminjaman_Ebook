@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>try{document.documentElement.dataset.theme=JSON.parse(localStorage.getItem("theme"))||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Detail e-book dan peminjaman">
+  <title>Detail e-book · E-Library</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="dashboard.html"><svg class="logo-mark" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M9 7h6"/></svg> E-Library</a>
+      <nav class="nav-right" aria-label="Navigasi akun">
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Ganti tema terang atau gelap"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+        <span class="user-chip" id="userChip">…</span>
+        <button type="button" id="logoutBtn" class="btn btn-ghost btn-sm">Keluar</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <a href="dashboard.html" class="back-link">← Kembali ke katalog</a>
+    <div class="loading" id="loading" aria-live="polite"><div class="spinner"></div>Memuat detail e-book…</div>
+    <section id="detailSection" aria-live="polite"></section>
+
+    <section class="riwayat-section" aria-labelledby="riwayatJudul">
+      <div class="section-head"><h2 id="riwayatJudul">Riwayat peminjaman saya</h2></div>
+      <div class="riwayat-list" id="riwayatList"></div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+  <script src="js/peminjaman.js"></script>
+</body>
+</html>
